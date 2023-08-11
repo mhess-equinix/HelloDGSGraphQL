@@ -32,3 +32,8 @@ dependencies {
 tasks.named('test') {
     useJUnitPlatform()
 }
+
+generateJava{
+    schemaPaths = ["${projectDir}/src/main/resources/schema"] // List of directories containing schema files
+    packageName = 'com.gradelcourse.gradelgraphql.generated' // The package name to use to generate sources
+}
