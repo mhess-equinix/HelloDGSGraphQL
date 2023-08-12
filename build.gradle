@@ -24,6 +24,7 @@ dependencies {
     implementation(platform("com.netflix.graphql.dgs:graphql-dgs-platform-dependencies:latest.release"))
     implementation "com.netflix.graphql.dgs:graphql-dgs-spring-boot-starter"
     implementation 'com.graphql-java:graphql-java-extended-scalars:20.2'
+    implementation 'org.apache.commons:commons-lang3:3.13.0'
 
     implementation 'net.datafaker:datafaker:2.0.1'
 }
