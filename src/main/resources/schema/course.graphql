@@ -1,11 +1,8 @@
-type Hello {
-    text: String!
-    randomNumber: Int
-}
-
+# course.graphql will contain schema entry point including query and mutation
 type Query {
     allHellos: [Hello]!
     oneHello: Hello
+    books(author: String): [Book]
 }
 
 # Optional if there is a type with the name of Query
