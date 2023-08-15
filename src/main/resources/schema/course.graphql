@@ -3,6 +3,7 @@ type Query {
     allHellos: [Hello]!
     oneHello: Hello
     books(author: String): [Book]
+    booksByReleased(releasedInput: ReleaseHistoryInput!): [Book]
 }
 
 # Optional if there is a type with the name of Query
